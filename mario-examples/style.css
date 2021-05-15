@@ -46,15 +46,26 @@ html, body{
   top: -40px;
   left: 0;
   animation-name: drive;
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-fill-mode: both;
-  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.luigi{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  animation-name: drive;
+  animation-duration: 11s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
 }
 
 /*// KEYFRAMES //*/
 @keyframes drive{
-  from{ transform: translateX(200px)}
-  to{ transform: translateX(700px)}
+  from{ transform: translateX(-200px)}
+  to{ transform: translateX(9999px)}
 }
 
 
